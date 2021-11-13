@@ -1,0 +1,8 @@
+ docker stop $(docker ps -a -q)
+ docker rm $(docker ps -a -q)
+
+docker run -p 8080:8080 -d --name webapp hirahasan44/node 
+
+history | grep  yarn
+
+docker build hirahasan44/webtech:latest
